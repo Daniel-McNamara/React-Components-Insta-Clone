@@ -7,9 +7,11 @@ import "./Posts.css";
 const PostsPage = (props) => {
   return (
     <div className="posts-container-wrapper">
-      {/* map through data here */
-      
-      }
+      {props.dummyData.map(item => (
+        <div>
+          <Post post={item} />
+        </div>
+      ))}
     </div>
   );
 };
